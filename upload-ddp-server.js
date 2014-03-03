@@ -23,7 +23,7 @@ Meteor.methods({
     FS.Utility.validateAction(fileObj.collection.files._validators['update'], fileObj, self.userId);
 
     // Save chunk in temporary store
-    FS.TempStore.saveChunk(fileObj, data, start, function(err) {
+    FS.TempStore.saveChunk(fileObj, FS.Utility.binaryToBuffer(data), start, function(err) {
       if (err) {
         throw new Error("Unable to load binary chunk at position " + start + ": " + err.message);
       }
