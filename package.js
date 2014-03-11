@@ -5,25 +5,38 @@ Package.describe({
 
 Package.on_use(function(api) {
 
-  api.use(['cfs-base-package', 'cfs-tempstore', 'cfs-file']);
-
-  api.use(['deps', 'underscore', 'check', 'livedata', 'mongo-livedata',
-    'ejson', 'power-queue', 'reactive-list']);
+  api.use([
+    //CFS packages
+    'cfs-base-package',
+    'cfs-tempstore',
+    'cfs-file',
+    'cfs-ejson-file',
+    //Core packages
+    'deps',
+    'underscore',
+    'check',
+    'livedata',
+    'mongo-livedata',
+    'ejson',
+    //Other packages
+    'power-queue',
+    'reactive-list'
+    ]);
 
   api.add_files([
     'upload-ddp-client.js'
-  ], 'client');
+    ], 'client');
 
   api.add_files([
     'upload-ddp-server.js'
-  ], 'server');
+    ], 'server');
 });
 
 Package.on_test(function (api) {
   api.use('collectionFS');
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
-           'random', 'deps']);
+   'random', 'deps']);
 
   api.add_files('tests/server-tests.js', 'server');
   api.add_files('tests/client-tests.js', 'client');
