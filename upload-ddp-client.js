@@ -21,7 +21,7 @@ var putMethodName = '/cfs/files/put';
  */
 var _taskHandler = function(task, next) {
   FS.debug && console.log("uploading chunk " + task.chunk + ", bytes " + task.start + " to " + Math.min(task.end, task.fileObj.size) + " of " + task.fileObj.size);
-  task.fileObj.getBinary(task.start, task.end, function gotBinaryCallback(err, data) {
+  task.fileObj.data.getBinary(task.start, task.end, function gotBinaryCallback(err, data) {
     if (err) {
       next(new Meteor.Error(err.error, err.message));
     } else {
@@ -207,7 +207,7 @@ FS.DDP = {};
 /**
  * @namespace FS
  * @type UploadTransferQueue
- * 
+ *
  * There is a single uploads transfer queue per client (not per CFS)
  */
 FS.DDP.uploadQueue = new UploadTransferQueue();
