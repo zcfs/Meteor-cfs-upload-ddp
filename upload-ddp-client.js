@@ -179,18 +179,18 @@ UploadTransferQueue = function(options) {
       // Add chunk upload tasks
       for (var chunk = 0, start; chunk < chunks; chunk++) {
         start = chunk * chunkSize;
-        if (! fileObj.chunkIsUploaded(start)) {
-          // Create and add the task
-          chunkQueue.add({
-            chunk: chunk,
-            name: fileObj.name,
-            methodName: putMethodName,
-            fileObj: fileObj,
-            start: start,
-            end: (chunk + 1) * chunkSize,
-            connection: self.connection
-          });
-        }
+        // Create and add the task
+        // XXX should we somehow make sure we haven't uploaded this chunk already, in
+        // case we are resuming?
+        chunkQueue.add({
+          chunk: chunk,
+          name: fileObj.name,
+          methodName: putMethodName,
+          fileObj: fileObj,
+          start: start,
+          end: (chunk + 1) * chunkSize,
+          connection: self.connection
+        });
       }
 
       // Add the queue to the main upload queue
