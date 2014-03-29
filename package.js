@@ -13,7 +13,6 @@ Package.on_use(function(api) {
     'cfs-ejson-file',
     //Core packages
     'deps',
-    'underscore',
     'check',
     'livedata',
     'mongo-livedata',
