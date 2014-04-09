@@ -8,6 +8,7 @@
 	"packages": {
 		"cfs-base-package": {},
 		"power-queue": {},
-		"reactive-list": {}
+		"reactive-list": {},
+		"cfs-ejson-file": {}
 	}
 }
