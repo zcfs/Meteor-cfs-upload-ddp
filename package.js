@@ -1,5 +1,5 @@
 Package.describe({
-  name: "cfs-upload-ddp",
+  version: '0.0.0',
   summary: 'CollectionFS, DDP File Upload'
 });
 
