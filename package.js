@@ -1,16 +1,18 @@
 Package.describe({
+  name: 'cfs:upload-ddp',
   version: '0.0.0',
   summary: 'CollectionFS, DDP File Upload'
 });
 
 Package.on_use(function(api) {
+  api.versionsFrom('METEOR@0.9.1');
 
   api.use([
     //CFS packages
-    'cfs-base-package',
-    'cfs-tempstore',
-    'cfs-file',
-    'cfs-ejson-file',
+    'cfs:base-package@0.0.0',
+    'cfs:tempstore@0.0.0',
+    'cfs:file@0.0.0',
+    'cfs:ejson-file@0.0.0',
     //Core packages
     'deps',
     'check',
@@ -18,8 +20,8 @@ Package.on_use(function(api) {
     'mongo-livedata',
     'ejson',
     //Other packages
-    'power-queue',
-    'reactive-list'
+    'cfs:power-queue@0.0.0',
+    'cfs:reactive-list@0.0.0'
     ]);
 
   api.add_files([
@@ -31,12 +33,12 @@ Package.on_use(function(api) {
     ], 'server');
 });
 
-Package.on_test(function (api) {
-  api.use('collectionfs');
-  api.use('test-helpers', 'server');
-  api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
-   'random', 'deps']);
+// Package.on_test(function (api) {
+//   api.use('collectionfs');
+//   api.use('test-helpers', 'server');
+//   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
+//    'random', 'deps']);
 
-  api.add_files('tests/server-tests.js', 'server');
-  api.add_files('tests/client-tests.js', 'client');
-});
+//   api.add_files('tests/server-tests.js', 'server');
+//   api.add_files('tests/client-tests.js', 'client');
+// });
