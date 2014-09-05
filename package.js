@@ -1,6 +1,6 @@
 Package.describe({
   name: 'cfs:upload-ddp',
-  version: '0.0.0',
+  version: '0.0.1',
   summary: 'CollectionFS, DDP File Upload'
 });
 
@@ -10,7 +10,7 @@ Package.on_use(function(api) {
   api.use([
     //CFS packages
     'cfs:base-package@0.0.0',
-    'cfs:tempstore@0.0.0',
+    'cfs:tempstore@0.0.2',
     'cfs:file@0.0.0',
     'cfs:ejson-file@0.0.0',
     //Core packages
@@ -20,7 +20,7 @@ Package.on_use(function(api) {
     'mongo-livedata',
     'ejson',
     //Other packages
-    'cfs:power-queue@0.0.0',
+    'cfs:power-queue@0.0.1',
     'cfs:reactive-list@0.0.0'
     ]);
 

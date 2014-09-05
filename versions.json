@@ -30,7 +30,7 @@
     ],
     [
       "cfs:power-queue",
-      "0.0.0"
+      "0.0.1"
     ],
     [
       "cfs:reactive-list",
@@ -46,7 +46,7 @@
     ],
     [
       "cfs:tempstore",
-      "0.0.0"
+      "0.0.2"
     ],
     [
       "check",
@@ -114,7 +114,7 @@
     ],
     [
       "raix:eventemitter",
-      "0.0.1"
+      "0.0.2"
     ],
     [
       "random",
