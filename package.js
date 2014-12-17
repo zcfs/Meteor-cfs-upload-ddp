@@ -10,7 +10,7 @@ Package.onUse(function(api) {
 
   api.use([
     //CFS packages
-    'cfs:base-package@0.0.26',
+    'cfs:base-package@0.0.27',
     'cfs:tempstore@0.1.1',
     'cfs:file@0.0.15',
     'cfs:ejson-file@0.1.2',
@@ -21,8 +21,8 @@ Package.onUse(function(api) {
     'mongo-livedata',
     'ejson',
     //Other packages
-    'cfs:power-queue@0.9.10',
-    'cfs:reactive-list@0.0.8'
+    'cfs:power-queue@0.9.11',
+    'cfs:reactive-list@0.0.9'
     ]);
 
   api.addFiles([
