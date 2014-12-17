@@ -1,7 +1,7 @@
 Package.describe({
   git: 'https://github.com/CollectionFS/Meteor-cfs-upload-ddp.git',
   name: 'cfs:upload-ddp',
-  version: '0.0.14',
+  version: '0.0.15',
   summary: 'CollectionFS, DDP File Upload'
 });
 
