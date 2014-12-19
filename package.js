@@ -11,9 +11,9 @@ Package.onUse(function(api) {
   api.use([
     //CFS packages
     'cfs:base-package@0.0.27',
-    'cfs:tempstore@0.1.2',
+    'cfs:tempstore@0.1.3',
     'cfs:file@0.1.15',
-    'cfs:ejson-file@0.1.3',
+    'cfs:ejson-file@0.1.4',
     //Core packages
     'deps',
     'check',
