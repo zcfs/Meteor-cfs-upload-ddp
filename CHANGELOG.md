@@ -1,7 +1,7 @@
 # Changelog
 
 ## vCurrent
-## [v0.0.16, origin/master, origin/HEAD, master] (https://github.com/CollectionFS/Meteor-cfs-upload-ddp/tree/v0.0.16, origin/master, origin/HEAD, master)
+## [v0.0.16] (https://github.com/CollectionFS/Meteor-cfs-upload-ddp/tree/v0.0.16)
 #### 17/12/14 by Morten Henriksen
 - Bump to version 0.0.16
 
