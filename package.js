@@ -12,7 +12,7 @@ Package.onUse(function(api) {
     //CFS packages
     'cfs:base-package@0.0.27',
     'cfs:tempstore@0.1.2',
-    'cfs:file@0.1.14',
+    'cfs:file@0.1.15',
     'cfs:ejson-file@0.1.3',
     //Core packages
     'deps',
