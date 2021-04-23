@@ -1,4 +1,4 @@
-cfs:upload-ddp
+zcfs:upload-ddp
 =========================
 
 ~~Looking for maintainers - please reach out!~~
@@ -9,11 +9,11 @@ This package is to be archived due to inability to find contributors, thanks to 
 ---
 
 This is a Meteor package that provides DDP uploads for
-[CollectionFS](https://github.com/CollectionFS/Meteor-CollectionFS).
+[CollectionFS](https://github.com/zcfs/Meteor-CollectionFS).
 
 CollectionFS uses HTTP uploads by default because they currently work better,
 but anyone with an interest in uploading over DDP can swap in this package
-instead of the cfs:upload-http package.
+instead of the zcfs:upload-http package.
 
 ## Custom Connection
 

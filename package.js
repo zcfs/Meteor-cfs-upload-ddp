@@ -1,6 +1,6 @@
 Package.describe({
-  git: 'https://github.com/CollectionFS/Meteor-cfs-upload-ddp.git',
-  name: 'cfs:upload-ddp',
+  git: 'https://github.com/zcfs/Meteor-cfs-upload-ddp.git',
+  name: 'zcfs:upload-ddp',
   version: '0.0.17',
   summary: 'CollectionFS, DDP File Upload'
 });
@@ -10,10 +10,10 @@ Package.onUse(function(api) {
 
   api.use([
     //CFS packages
-    'cfs:base-package@0.0.27',
-    'cfs:tempstore@0.1.3',
-    'cfs:file@0.1.15',
-    'cfs:ejson-file@0.1.4',
+    'zcfs:base-package@0.0.27',
+    'zcfs:tempstore@0.1.3',
+    'zcfs:file@0.1.15',
+    'zcfs:ejson-file@0.1.4',
     //Core packages
     'deps',
     'check',
@@ -21,8 +21,8 @@ Package.onUse(function(api) {
     'mongo-livedata',
     'ejson',
     //Other packages
-    'cfs:power-queue@0.9.11',
-    'cfs:reactive-list@0.0.9'
+    'zcfs:power-queue@0.9.11',
+    'zcfs:reactive-list@0.0.9'
     ]);
 
   api.addFiles([
